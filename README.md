@@ -6,7 +6,7 @@
             </title>
         </head>
         <body>
-            <H1>ATIVIDADE DE HTML </H1>
+            <H1>ATIVIDADES DE HTML </H1>
             <h2>Iniciando atividades com o github</h2>
             <H2>HELLO WORLD!</H2>
             <h3>Feito alteracoes</h3>
