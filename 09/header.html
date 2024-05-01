@@ -1,1 +1,56 @@
-Layout Fixar Header
+<doctype html>
+    <html>
+        <head>
+            <title>
+                Layout - Header
+            </title>
+        </head>
+        <style type="text/css">
+            body{
+                background: #61bd8c;
+            }
+            #conteudo{
+                background: #FFFFFF;
+                padding: 10px;
+                width: 900px;
+                margin: 30px auto;
+            }  
+            .caixa{
+                background: red;
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+                color: #FFFFFF;
+            }      
+            #relativo{
+                position: relative;
+                left: 30px;
+            }
+            #absoluto{
+                position: absolute;
+                left: 30px;
+            }
+            #fixo{
+                position: fixed;
+                left: 200px;
+                top: 0px;
+            }
+        </style>
+        <body>
+            <span>
+                Container body
+            </span>
+            <div id=conteudo>
+                Container div
+                <div id="relativo" class="caixa">
+                    Relativo
+                </div>
+                <div id="absoluto" class="caixa">
+                    Absoluto
+                </div>
+                <div id="fixo" class="caixa">
+                    Fixo
+                </div>                
+            </div>
+        </body>
+    </html>
