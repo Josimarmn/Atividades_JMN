@@ -1,10 +1,4 @@
-<html>
-<head>
-  <title>Transparências, Sombras e Gradientes</title>
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" type="text/css" href="../14/css/normalize.css">
-</head>
-<style>
+
     .box{
       background: url("../14/img/camera.png");
       width: 300px;
@@ -17,6 +11,3 @@
         background:rgb(255,255,255,0.5);
         text-shadow: 3px 3px 3px orange;
     }
-  </style>
-
-</html>
