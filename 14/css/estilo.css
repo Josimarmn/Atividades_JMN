@@ -6,7 +6,7 @@
 </head>
 <style>
     .box{
-      background-image: url(../14/img/camera.png);
+      background-image: url("../14/img/camera.png");
       width: 300px;
       height: 300px;
       margin: 50px;
