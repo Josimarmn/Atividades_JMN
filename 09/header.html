@@ -21,7 +21,20 @@
                 width: 100px;
                 height: 100px;
                 color: #FFFFFF;
-            }      
+            }
+            #relativo{
+                position: relative;
+                left: 30px;
+            } 
+            #absoluto{
+                position: absolute;
+                left: 300px;
+            }
+            #fixo{
+                position: fixed;
+                left: 200px;
+                top: 0px;
+            }
         </style>
         <header>BOX MODEL - FIXAR HEADER</header>
         <body>
@@ -30,13 +43,13 @@
             </span>
             <div id=conteudo>
                 Container div
-                <div class="caixa">
+                <div id="relativo" class="caixa">
                     Relativo
                 </div>
-                <div class="caixa">
+                <div id="absoluto" class="caixa">
                     Absoluto
                 </div>
-                <div class="caixa">
+                <div id="fixo" class="caixa">
                     Fixo
                 </div>                
             </div>
