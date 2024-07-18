@@ -1,1 +1,21 @@
-Atividade 12
+<doctype html>
+    <html>
+        <head>
+            <title>
+                Atributo Data
+            </title>
+          <script type="text/javascript">
+            function mostravalor(componente){
+              var valor=componente.getAttribute('data-idade');
+              alert(valor);
+            }
+           </script>
+        </head>
+      <body>
+        <ul>
+          <li class="pessoa" onclick="mostravalor(this)" data-idade="20">João</li>          
+          <li class="pessoa" onclick="mostravalor(this)" data-idade="30">José</li>
+          <li class="pessoa" onclick="mostravalor(this)" data-idade="40">Maria</li>          
+        </ul>
+      </body>
+    </html>
