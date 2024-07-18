@@ -5,6 +5,66 @@
         </head>
         
         <style type="text/css">
+
+        
+            body{
+                background: #61bd8c;
+            }
+            #conteudo{
+                display: flex;
+                background: #FFFFFF;
+                width: 100%;
+                hight: 500px;
+            }  
+            .caixavermelha{
+                background: red;
+                margin: 0px;
+                width: 25%;
+                height: 500px;
+                color: #FFFFFF;
+            }
+            .caixaazul{
+                background: blue;
+                margin: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100px;
+                color: #FFFFFF;
+            }
+            .caixaverdem{
+                background: green;
+                width: 100%;
+                height: 40px;
+                color: #FFFFFF;
+            }
+            .caixaverde{
+                background: green;
+                top: 100px;
+                width: 100%;
+                height: 40px;
+                color: #FFFFFF;
+            }
+            .caixaamarela{
+                background: yellow;
+                width: 50%;
+                height: 500px;
+                color: #FFFFFF;
+            }
+            #relativo{
+                position: relative;
+                left: 0px;
+            } 
+            #absoluto{
+                position: absolute;
+                left: 0px;
+            }
+            #fixo{
+                position: fixed;
+                left: 0px;
+                margin: 0px;
+            }
+        </style>
+            
             #relativo{
                 position: relative;
                 left: 0px;
@@ -22,13 +82,13 @@
         
         <body>    
            
-            <div>
+            <div id= "fixo" class= "caixavermelha">
                 Content
             </div>
-            <div>
+            <div class= "caixaamarela">
                  Side bar
             </div>               
-            <div>
+            <div class= "caixaazul">
                <footer>FOOTER</footer>
             </div>
         </body>
