@@ -1,10 +1,11 @@
 <doctype html>
     <html>
         <head>
-            <title> Layout - Sidebar </title>
+            <title>
+                Layout - Header
+            </title>
         </head>
-        
-        <style type="text/css">       
+        <style type="text/css">
             body{
                 background: #61bd8c;
             }
@@ -14,7 +15,7 @@
                 width: 100%;
                 hight: 500px;
             }  
-            .caixavermelha{
+            .caixa{
                 background: red;
                 margin: 0px;
                 width: 25%;
@@ -47,7 +48,6 @@
                 width: 50%;
                 height: 500px;
                 color: #FFFFFF;
-                right: 0px;
             }
             #relativo{
                 position: relative;
@@ -63,19 +63,26 @@
                 margin: 0px;
             }
         </style>
-        
+        <div class="caixaazul">
+                       HEADER
+              </div>
+              <div class="caixaverdem">
+                       MENU
+              </div>   
         <body>    
-            <div class= "caixaverdeem">
-                Main Menu
+              <div id=conteudo>              
+                <div class="caixa">
+                    Left
+                </div>
+                <div class id="fixo" "caixaamarela">
+                    Center
+                </div>
+                <div class="caixa">
+                    Right
+                </div>
             </div>
-            <div  class= "caixavermelha">
-                Content
-            </div>
-            <div id= "fixo" class= "caixaamarela">
-                 Side bar
-            </div>               
-            <div class= "caixaazul">
-               <footer>FOOTER</footer>
-            </div>
+         <div class="caixaverde">
+           <footer>FOOTER</footer>
+        </div>
         </body>
     </html>
