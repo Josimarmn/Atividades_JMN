@@ -11,6 +11,21 @@
             }
            </script>
         </head>
+        <style>
+            .pessoa{
+                color:red;
+            }
+            .pessoa{date-idade='30']{
+                color: blue;
+            }
+            
+            .pessoa::before{
+                content:'antes';
+            }
+            .pessoa::after{
+                content:'depois';
+            }
+        </style>
       <body>
         <ul>
           <li class="pessoa" onclick="mostravalor(this)" data-idade="20">João</li>          
