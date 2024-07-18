@@ -2,7 +2,7 @@
     <html>
         <head>
             <title>
-                Layout - Hider
+                Layout - Header
             </title>
         </head>
         <style type="text/css">
@@ -14,12 +14,12 @@
                 background: #FFFFFF;
                 width: 100%;
                 hight: 500px;
-                text-align: center;
+                top: 0px;
             }  
             .caixa{
                 background: red;
                 margin: 0px;
-                width: 60%;
+                width: 25%;
                 height: 500px;
                 color: #FFFFFF;
             }
@@ -28,12 +28,13 @@
                 margin: 0px;
                 top: 0px;
                 width: 100%;
-                height: 100px;
+                height: 80px;
                 color: #FFFFFF;
             }
             .caixaverdem{
                 background: green;
                 width: 100%;
+                top: 80px;
                 height: 40px;
                 color: #FFFFFF;
             }
@@ -46,7 +47,7 @@
             }
             .caixaamarela{
                 background: yellow;
-                width: 40%;
+                width: 50%;
                 height: 500px;
                 color: #FFFFFF;
             }
@@ -60,29 +61,31 @@
             }
             #fixo{
                 position: fixed;
-                right: 0px;
+                left: 0px;
                 margin: 0px;
             }
-        </style>
-        <div id="fixo" class= "caixaazul">
-                   HEADER
-         </div>   
-        <div class="caixaverdem">
-                   MENU
-        </div>
-
-        <body>    
-              <div id=conteudo>              
+        </style>  
+            <div id="fixo" class="caixaazul">
+                           HEADER
+            </div>
+            <div class="caixaverdem">
+                           MENU
+            </div> 
+        
+        <body>          
+            <div id=conteudo>              
                 <div class="caixa">
-                    CONTENT
+                    Left
                 </div>
-
                 <div class="caixaamarela">
-                    SIDE BAR
+                    Center
+                </div>
+                <div class="caixa">
+                    Right
                 </div>
             </div>
-         <div class="caixaverde">
+        </body>
+        <div class="caixaverde">
            <footer>FOOTER</footer>
         </div>
-        </body>
     </html>
