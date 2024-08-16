@@ -1,1 +1,30 @@
 Atividade 21
+    	<script type="text/javascript">
+
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			  return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
+
+			
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+			var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+			  return new bootstrap.Popover(popoverTriggerEl)
+			})
+
+	   </script>
+    	  	<div class="alert alert-success" >
+			   <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+		</div>
+			
+		<div class="alert alert-info">
+			  <strong>Info!</strong> Indicates a neutral informative change or action.
+		</div>
+
+		<div class="alert alert-warning">
+			  <strong>Warning!</strong> Indicates a warning that might need attention.
+		</div>
+
+		<div class="alert alert-danger">
+			  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+		</div> 
