@@ -1,30 +1,97 @@
 <doctype html>
-<html>
+    <html>
         <head>
             <title>
-                Article
+                Layout - Header
             </title>
         </head>
-<article>
-  <header>
-    ATIVIDADE 11 - POSTAGEM
-  </header>
-  
-  <section>
-    <h4>Artigo 01</h4>
-    <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo quando estiver examinando sua diagramação.</p>
-    <span>Atualizado em: <time datetime="2017-07-12">12/07/2017</time></span>
-    
-  </section>
-  
-  <section>
-    <h4>Seção 02</h4>
-  </section>
-  
-  <footer>
-    Rodapé
-  </footer>
-  
-</article>
-</html>
-  
+        <style type="text/css">
+            body{
+                background: #61bd8c;
+            }
+            #conteudo{
+                display: flex;
+                background: #FFFFFF;
+                width: 100%;
+                hight: 500px;
+                top: 0px;
+            }  
+            .caixa{
+                background: red;
+                margin: 0px;
+                width: 25%;
+                height: 500px;
+                color: #FFFFFF;
+            }
+            .caixaazul{
+                background: blue;
+                margin: 0px;
+                top: 0px;
+                width: 100%;
+                height: 80px;
+                color: #FFFFFF;
+            }
+            .caixaverdem{
+                background: green;
+                width: 100%;
+                top: 80px;
+                height: 40px;
+                color: #FFFFFF;
+            }
+            .caixaverde{
+                background: green;
+                top: 100px;
+                width: 100%;
+                height: 40px;
+                color: #FFFFFF;
+            }
+            .caixaamarela{
+                background: yellow;
+                width: 50%;
+                height: 500px;
+                color: #FFFFFF;
+            }
+            .caixacomum2{
+                width: 50%;
+                height: 500px;
+                color: #FFFFFF;
+            }
+            #relativo{
+                position: relative;
+                left: 0px;
+            } 
+            #absoluto{
+                position: absolute;
+                left: 0px;
+            }
+            #fixo{
+                position: fixed;
+                left: 0px;
+                margin: 0px;
+            }
+        </style>  
+            <div id="fixo" class="caixaazul">
+                           HEADER
+            </div>
+            <div class="caixaverdem">
+                           MENU
+            </div> 
+        
+        <body>          
+            <div id=conteudo>              
+                <div class="caixa">
+                    Left
+                </div>
+                <div class="caixacomum2">
+                    Center
+                </div>
+                <div class="caixa">
+                    Right
+                </div>
+            </div>
+        </body>
+        <div class="caixaverde">
+           <footer>FOOTER</footer>
+        </div>
+    </html>
+
