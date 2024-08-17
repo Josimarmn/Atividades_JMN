@@ -48,6 +48,29 @@
                 height: 500px;
                 color: #6A6A6A;
             }
+            .menu{
+                background: #EEE685;
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                font-size: 18px;
+                padding: 10px
+             }
+             a:link{/*não visitados*/
+                color: #b9c941;
+                text-decoration: none;
+             }
+             a:visited{/*visitados*/
+                color: #458B00;
+             }
+            a:hover{/*passar o mouse*/
+                color:#8B4726;
+                background:#EEE000;
+            }
+            a:active{
+                color:#FF1493;
+            }
+
+
+            
             #relativo{
                 position: relative;
                 left: 0px;
@@ -69,7 +92,13 @@
         <body>          
             <div id=conteudo>              
                 <div class="caixa">
-                    NAV
+     
+                <nav class="menu">  
+                <a href="http://www.google.com">Google</a> |
+                <a href="http://www.techtudo.com.br/">Tech tudo</a> |
+                <a href="http://www.maujor.com">Maujor</a>              
+                </nav>  
+                    
                 </div>
                 <div class="caixacomum2">
                     <SECTION>
