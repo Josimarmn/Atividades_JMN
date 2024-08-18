@@ -2,6 +2,7 @@
     <html>
       <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>
                 Atributo Data
             </title>
@@ -9,8 +10,8 @@
               function mostravalor(button){
                   var idad=button.getAttribute ("data-idade");
                   var cpf=button.getAttribute ("data-cpf");
-                  const nome=button.parentElement;
-                  const detalhes=nome.querySelector(".pessoa-detalhes");
+                  const pessoa=button.parentElement;
+                  const detalhes=pessoa.querySelector(".pessoa-detalhes");
                   detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
                   detalhes.style.display= "block";
               }
