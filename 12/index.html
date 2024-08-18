@@ -23,13 +23,30 @@
             }
             .pessoa::after{
                 content:' - idade:';
-            }            
+            }
+            .nome{
+                margin-bottom: 20px;
+            }
+            .nome-detalhes{
+                display: none;
+            }
         </style>
       <body>
-        <ul>
-          <li class="pessoa" onclick="mostravalor(this)" data-idade="20">João</li>          
-          <li class="pessoa" onclick="mostravalor(this)" data-idade="30">José</li>
-          <li class="pessoa" onclick="mostravalor(this)" data-idade="40">Maria</li>          
-        </ul>
+        <h1>Atributo Data: Nome - Idade - CPF</h1>
+        <div class="nome" data-nome="João" data-idade="20" data-CPF="999">
+            <h3>João</h3>
+            <p class="nome-detalhes"></p>
+            <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
+        </div>
+         <div class="nome" data-nome="José" data-idade="30" data-CPF="888">
+            <h3>José</h3>
+            <p class="nome-detalhes"></p>
+            <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
+        </div>
+         <div class="nome" data-nome="Maria" data-idade="40" data-CPF="777">
+            <h3>Maria</h3>
+            <p class="nome-detalhes"></p>
+            <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
+        </div>
       </body>
     </html>
