@@ -7,8 +7,9 @@
             </title>
             <script type= "text/javascript">
               function mostravalor(componente){
-              var valor=componente.getAttribute ("data-idade");
-              alert (valor);
+              var idad=componente.getAttribute ("data-idade");
+              var cpf=componente.getAttribute ("data-cpf");
+              alert (idad,cpf);
               }
             </script>
       </head>
@@ -23,9 +24,9 @@
 
       <body>
         <ul>
-            <li class="pessoa" onclick="mostravalor(this)" data-idade= "20">João</li>
-            <li class="pessoa" onclick="mostravalor(this)" data-idade= "30">José</li>
-            <li class="pessoa" onclick="mostravalor(this)" data-idade= "40">Maria</li>
+            <li class="pessoa" onclick="mostravalor(this)" data-idade= "20", data-cpf="999">João</li>
+            <li class="pessoa" onclick="mostravalor(this)" data-idade= "30", data-cpf="888">José</li>
+            <li class="pessoa" onclick="mostravalor(this)" data-idade= "40", data-cpf="777">Maria</li>
         </ul>        
       </body>
     </html>
