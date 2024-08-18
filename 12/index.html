@@ -1,17 +1,10 @@
 <doctype html>
     <html>
-        <head>
+      <head>
             <title>
                 Atributo Data
             </title>
-          <script type="text/javascript">
-            function mostravalor(componente){
-              var valor=componente.getAttribute('data-idade');
-              alert(valor);
-            }
-           </script>
-        </head>
-        <style type="text/css">
+          <style type="text/css">
             .pessoa{
                 color:red;
             }
@@ -30,7 +23,9 @@
             .nome-detalhes{
                 display: none;
             }
-        </style>
+          </style>
+      </head>
+
       <body>
         <h1>Atributo Data: Nome - Idade - CPF</h1>
         <div class="nome" data-nome="João" data-idade="20" data-CPF="999">
@@ -58,7 +53,7 @@
             detalhes.textContent = `Idade: ${idade}, CPF: ${CPF};
             detalhes.style.display = 'block';
         }
-    </script>
+        </script>
         
       </body>
     </html>
