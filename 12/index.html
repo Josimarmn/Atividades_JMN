@@ -6,13 +6,12 @@
                 Atributo Data
             </title>
             <script type= "text/javascript">
-              function mostravalor(componente){
-                  var nome=componente.getAttribute ("data-nome");
-                  var idad=componente.getAttribute ("data-idade");
-                  var cpf=componente.getAttribute ("data-cpf");
-                  const nome=componente.parentElement;
-                  const detalhes=pessoa.querySelector(".pessoa-detalhes");
-                  detalhes.textContent="Idade: ${idad}, CPH: ${cpf}";
+              function mostravalor(button){
+                  var idad=button.getAttribute ("data-idade");
+                  var cpf=button.getAttribute ("data-cpf");
+                  const nome=button.parentElement;
+                  const detalhes=nome.querySelector(".pessoa-detalhes");
+                  detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
                   detalhes.style.display= "block";
               }
             </script>
