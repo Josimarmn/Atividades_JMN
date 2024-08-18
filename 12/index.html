@@ -7,10 +7,13 @@
             </title>
             <script type= "text/javascript">
               function mostravalor(componente){
-              var nome=componente.getAttribute ("data-nome");
-              var idad=componente.getAttribute ("data-idade");
-              var cpf=componente.getAttribute ("data-cpf");
-              alert (idad, cpf);
+                  var nome=componente.getAttribute ("data-nome");
+                  var idad=componente.getAttribute ("data-idade");
+                  var cpf=componente.getAttribute ("data-cpf");
+                  const nome=componente.parentElement;
+                  const detalhes=pessoa.querySelector(".pessoa-detalhes");
+                  detalhes.textContent="Idade: ${idad}, CPH: ${cpf}";
+                  detalhes.style.display= "block";
               }
             </script>
       </head>
@@ -18,16 +21,29 @@
             .pessoa{
                 color:red;
             }
+          .pessoa-detalhes{
+              display: none;
+          }
             .pessoa[data-idade='30']{
                 color: blue;
             }
       </style>
 
       <body>
-        <ul>
-            <li class="pessoa" onclick="mostravalor(this)" data-idade= "20", data-cpf="999", data-nome="João">João</li>
-            <li class="pessoa" onclick="mostravalor(this)" data-idade= "30", data-cpf="888", data-nome="José">José</li>
-            <li class="pessoa" onclick="mostravalor(this)" data-idade= "40", data-cpf="777", data-nome="Maria">Maria</li>
-        </ul>        
+        <div class="pessoa" data-idade="20", data-cpf="999">
+            <h3>João</h3>
+            <p class="pessoa-detalhes"></p>
+            <button onclick="mostrarvalor(this)">Mostrar Dados</button>
+        </div>
+        <div class="pessoa" data-idade="30", data-cpf="888">
+            <h3>José</h3>
+            <p class="pessoa-detalhes"></p>
+            <button onclick="mostrarvalor(this)">Mostrar Dados</button>
+        </div>
+        <div class="pessoa" data-idade="40", data-cpf="777">
+            <h3>Maria</h3>
+            <p class="pessoa-detalhes"></p>
+            <button onclick="mostrarvalor(this)">Mostrar Dados</button>
+        </div>
       </body>
     </html>
