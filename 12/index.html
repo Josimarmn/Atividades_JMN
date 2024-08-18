@@ -48,5 +48,19 @@
             <p class="nome-detalhes"></p>
             <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
         </div>
+
+        <script>
+        function showdetalhes(button) {
+            const nome = button.parentElement; /* div produto pai do botão, para cada produto uma div */
+            const detalhes = nome.querySelector('.produto-detalhes'); /* p que vai mostrar os detalhes do produto*/
+			/* pega os atributos data de cada produto, esses atributos data estão na div produto */
+            const idade = nome.getAttribute('data-idade');
+            const CPF = nome.getAttribute('data-CPF');          			
+			/* seta no conteúdo texto da p detalhes as informações do produto  */
+            detalhes.textContent = `Idade: ${idade}, CPF: R$ ${CPF};
+            detalhes.style.display = 'block';
+        }
+    </script>
+        
       </body>
     </html>
