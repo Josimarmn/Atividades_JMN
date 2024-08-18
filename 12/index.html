@@ -2,21 +2,17 @@
     <html>
       <head>
             <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>
                 Atributo Data
             </title>
-            <script>
-            function showdetalhes(button) {
-                const nome = button.parentElement;
-                const detalhes = nome.querySelector('.nome-detalhes'); 			
-                const idade = nome.getAttribute('data-idade');
-                const CPF = nome.getAttribute('data-CPF');     				
-                detalhes.textContent = `Idade: ${idade}, CPF: ${CPF}';
-                detalhes.style.display = 'block';
-            }
+            <script type= "text/javascript">
+               function mostravalor(componente){
+                   var valor=componente.getAttribute ("data-idade");
+                   alert (valor);
+               }
             </script>
-          <style type="text/css">
+      </head>
+      <style type="text/css">
             .pessoa{
                 color:red;
             }
@@ -29,34 +25,13 @@
             .pessoa::after{
                 content:' - idade:';
             }
-            .nome{
-                margin-bottom: 20px;
-            }
-            .nome-detalhes{
-                display: none;
-            }
-          </style>
-      </head>
+      </style>
 
       <body>
-        <h1>Atributo Data: Nome - Idade - CPF</h1>
-        <div class="nome" data-nome="João" data-idade="20" data-CPF="999">
-            <h3>João</h3>
-            <p class="nome-detalhes"></p>
-            <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
-        </div>
-         <div class="nome" data-nome="José" data-idade="30" data-CPF="888">
-            <h3>José</h3>
-            <p class="nome-detalhes"></p>
-            <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
-        </div>
-         <div class="nome" data-nome="Maria" data-idade="40" data-CPF="777">
-            <h3>Maria</h3>
-            <p class="nome-detalhes"></p>
-            <button onclick="showdetalhes(this)">Mostrar Dados</button>                        
-        </div>
-
-
-        
+        <ul>
+            <li class="pessoa" onclick="mostravlaor(this)" data-idade= "20">João</li>
+            <li class="pessoa" onclick="mostravlaor(this)" data-idade= "30">José</li>
+            <li class="pessoa" onclick="mostravlaor(this)" data-idade= "40">Maria</li>
+        </ul>        
       </body>
     </html>
