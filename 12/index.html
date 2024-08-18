@@ -6,10 +6,6 @@
                 Atributo Data
             </title>
             <script type= "text/javascript">
-               function mostravalor(componente){
-                   var valor=componente.getAttribute ("data-idade");
-                   alert (valor);
-               }
             </script>
       </head>
       <style type="text/css">
@@ -20,7 +16,10 @@
                 color: blue;
             }
       </style>
-
+      function mostravalor(componente){
+         var valor=componente.getAttribute ("data-idade");
+          alert (valor);
+       }
       <body>
         <ul>
             <li class="pessoa" onclick="mostravlaor(this)" data-idade= "20">João</li>
