@@ -6,18 +6,7 @@
             <title>
                 Atributo Data
             </title>
-            <script type= "text/javascript">
-              function mostravalor(button){
-                  const pessoa=button.parentElement;
-                  const detalhes=pessoa.querySelector(".pessoa-detalhes");
-                  
-                  const idad=pessoa.getAttribute ("data-idade");
-                  const cpf=pessoa.getAttribute ("data-cpf");
 
-                  detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
-                  detalhes.style.display= "block";
-              }
-            </script>
       </head>
       <style type="text/css">
             .pessoa{
@@ -47,5 +36,17 @@
             <p class="pessoa-detalhes"></p>
             <button onclick="mostrarvalor(this)">Mostrar Dados</button>
         </div>
+          <script type= "text/javascript">
+              function mostravalor(button){
+                  const pessoa=button.parentElement;
+                  const detalhes=pessoa.querySelector(".pessoa-detalhes");
+                  
+                  const idad=pessoa.getAttribute ("data-idade");
+                  const cpf=pessoa.getAttribute ("data-cpf");
+
+                  detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
+                  detalhes.style.display= "block";
+              }
+          </script>
       </body>
     </html>
