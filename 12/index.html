@@ -1,52 +1,62 @@
-<doctype html>
-    <html>
-      <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>
-                Atributo Data
-            </title>
-          <style type="text/css">
-                .pessoa{
-                    color:red;
-                }
-              .pessoa-detalhes{
-                  display: none;
-              }
-                .pessoa[data-idade='30']{
-                    color: blue;
-                }
-          </style>
-      </head>
 
+<DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de data-*</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .produto {
+            margin-bottom: 20px;
+        }
+        .produto h3 {
+            margin: 0;
+        }
+        .produto-detalhes {
+            display: none;
+        }
+    </style>
+</head>
+<body>
 
-      <body>
-        <div class="pessoa" data-idade="20", data-cpf="999">
-            <h3>João</h3>
-            <p class="pessoa-detalhes"></p>
-            <button onclick="mostrarvalor(this)">Mostrar Dados</button>
-        </div>
-        <div class="pessoa" data-idade="30", data-cpf="888">
-            <h3>José</h3>
-            <p class="pessoa-detalhes"></p>
-            <button onclick="mostrarvalor(this)">Mostrar Dados</button>
-        </div>
-        <div class="pessoa" data-idade="40", data-cpf="777">
-            <h3>Maria</h3>
-            <p class="pessoa-detalhes"></p>
-            <button onclick="mostrarvalor(this)">Mostrar Dados</button>
-        </div>
-          <script>
-              function mostrarvalor(button){
-                  const pessoa=button.parentElement;
-                  const detalhes=pessoa.querySelector(".pessoa-detalhes");
-                  
-                  const idad=pessoa.getAttribute ("data-idade");
-                  const cpf=pessoa.getAttribute ("data-cpf");
+    <h1>Produtos</h1>
 
-                  detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
-                  detalhes.style.display= "block";
-              }
-          </script>
-      </body>
-    </html>
+    <div class="produto" data-id="1" data-preco="29,99" data-categoria="Livros">
+        <h3>Livro de Programação</h3>
+        <p class="produto-detalhes"></p>
+        <button onclick="showdetalhes(this)">Mostrar Detalhes</button>
+    </div>
+
+    <div class="produto" data-id="2" data-preco="49,99" data-categoria="Eletrônicos">
+        <h3>Mouse Gamer</h3>
+        <p class="produto-detalhes"></p>
+        <button onclick="showdetalhes(this)">Mostrar Detalhes</button>
+    </div>
+
+    <div class="produto" data-id="3" data-preco="99,99" data-categoria="Móveis">
+        <h3>Cadeira de Escritório</h3>
+        <p class="produto-detalhes"></p>
+        <button onclick="showdetalhes(this)">Mostrar Detalhes</button>
+    </div>
+
+    <script>
+        function showdetalhes(button) {
+            const produto = button.parentElement; /* div produto pai do botão, para cada produto uma div */
+            const detalhes = produto.querySelector('.produto-detalhes'); /* p que vai mostrar os detalhes do produto*/
+			/* pega os atributos data de cada produto, esses atributos data estão na div produto */
+            const id = produto.getAttribute('data-id');
+            const preco = produto.getAttribute('data-preco');
+            const categoria = produto.getAttribute('data-categoria');
+			
+			/* seta no conteúdo texto da p detalhes as informações do produto  */
+            detalhes.textContent = `ID: ${id}, Preço: R$ ${preco}, Categoria: ${categoria}`;
+            detalhes.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
