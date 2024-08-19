@@ -44,7 +44,7 @@
                   const idad=pessoa.getAttribute ("data-idade");
                   const cpf=pessoa.getAttribute ("data-cpf");
 
-                  detalhes.value=idad, cpf;
+                  detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
                   detalhes.style.display= "block";
                   alert(idad);
               }
