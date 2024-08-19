@@ -8,10 +8,12 @@
             </title>
             <script type= "text/javascript">
               function mostravalor(button){
-                  var idad=button.getAttribute ("data-idade");
-                  var cpf=button.getAttribute ("data-cpf");
                   const pessoa=button.parentElement;
                   const detalhes=pessoa.querySelector(".pessoa-detalhes");
+                  
+                  const idad=pessoa.getAttribute ("data-idade");
+                  const cpf=pessoa.getAttribute ("data-cpf");
+
                   detalhes.textContent="Idade: ${idad}, CPF: ${cpf}";
                   detalhes.style.display= "block";
               }
