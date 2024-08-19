@@ -23,21 +23,21 @@
 </head>
 <body>
 
-    <h1>Produtos</h1>
+    <h1>Dados das Pessoas</h1>
 
-    <div class="pessoa" data-idad="20" data-cpf="999">
+    <div class="pessoa" data-idade="20" data-cpf="999">
         <h3>João</h3>
         <p class="pessoa-detalhes"></p>
         <button onclick="showdetalhes(this)">Mostrar Detalhes</button>
     </div>
 
-    <div class="pessoa" data-idad="30" data-cpf="888">
+    <div class="pessoa" data-idade="30" data-cpf="888">
         <h3>José</h3>
         <p class="pessoa-detalhes"></p>
         <button onclick="showdetalhes(this)">Mostrar Detalhes</button>
     </div>
 
-    <div class="pessoa" data-idad="40" data-cpf="777">
+    <div class="pessoa" data-idade="40" data-cpf="777">
         <h3>Maria</h3>
         <p class="pessoa-detalhes"></p>
         <button onclick="showdetalhes(this)">Mostrar Detalhes</button>
@@ -48,8 +48,8 @@
             const pessoa = button.parentElement;
             const detalhes = pessoa.querySelector('.pessoa-detalhes'); 
 			/* pega os atributos data de cada produto, esses atributos data estão na div produto */
-            const id = pessoa.getAttribute('data-idad');
-            const preco = pessoa.getAttribute('data-cpf');
+            const idad = pessoa.getAttribute('data-idade');
+            const cpf = pessoa.getAttribute('data-cpf');
 
             detalhes.textContent = `Idade: ${idad}, CPF: R$ ${cpf}`;
             detalhes.style.display = 'block';
