@@ -9,7 +9,7 @@ body{
       width: 100px;
       height: 100px;
       background: red;
-      animation: minhaAnimacao 40s linear 0;
+      animation: minhaAnimacao 10s linear 0;
     }
 
     @keyframes minhaAnimacao{
