@@ -12,10 +12,6 @@ body{
       animation-name: minhaAnimacao;
       animation-duration: 5s;
     }
-.box: hover{
-    border: solid 5px black;
-    transition: border 3s 2s;
-}
 
     @keyframes minhaAnimacao{
         from{
