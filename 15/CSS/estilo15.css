@@ -8,7 +8,6 @@ body{
       top: 80px;
       width: 100px;
       height: 100px;
-      background: red;
       animation: minhaAnimacao 40s linear 0;
     }
 
