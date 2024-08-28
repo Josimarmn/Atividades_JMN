@@ -10,9 +10,7 @@ body{
       height: 100px;
       animation: minhaAnimacao 40s linear 2s;
     }
-    .box: hover{
-      border: solid 5px black;
-    }
+
     @keyframes minhaAnimacao{
         0% { transform: rotate(0deg); background-color: red; }
         25% { transform: rotate(90deg); background-color: orange; }
