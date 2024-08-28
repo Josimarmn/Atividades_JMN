@@ -15,9 +15,9 @@ body{
     }
 
 @keyframes minhaAnimação {
-    0% { transform: rotate(0deg); background-color: red; }
-    25% { transform: rotate(90deg); background-color: orange; }
-    50% { transform: rotate(180deg); background-color: yellow; }
-    75% { transform: rotate(270deg); background-color: blue; }
-    100% { transform: rotate(360deg); background-color: red; }
+    0% { transform: minhaAnimação(0deg); background-color: red; }
+    25% { transform: minhaAnimação(90deg); background-color: orange; }
+    50% { transform: minhaAnimação(180deg); background-color: yellow; }
+    75% { transform: minhaAnimação(270deg); background-color: blue; }
+    100% { transform: minhaAnimação(360deg); background-color: red; }
 }
