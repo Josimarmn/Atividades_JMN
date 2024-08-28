@@ -4,11 +4,11 @@ body{
 }
     .box{
       position: relative;
-      left: 10px;
-      top: 10px;
+      left: 80px;
+      top: 80px;
       width: 100px;
       height: 100px;
-      animation: minhaAnimacao 40s linear 10s;
+      animation: minhaAnimacao 40s linear 2s;
     }
     .box: hover{
       border: solid 5px black;
