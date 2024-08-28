@@ -6,15 +6,24 @@ body{
       position: relative;
       left: 80px;
       top: 80px;
-      width: 100px;
-      height: 100px;
-      animation: minhaAnimacao 40s linear 0;
+      width: 50px;
+      height:50px;
+      background: red;
+      animation-name: minhaAnimacao;
+      animation-duration: 5s;
     }
+.box: hover{
+    border: solid 5px black;
+    transition: border 3s 2s;
+}
 
     @keyframes minhaAnimacao{
-        0% { transform: rotate(0deg); background-color: red; }
-        25% { transform: rotate(90deg); background-color: orange; }
-        50% { transform: rotate(180deg); background-color: yellow; }
-        75% { transform: rotate(270deg); background-color: blue; }
-        100% { transform: rotate(360deg); background-color: red; }
+        from{
+            Left: 80px;
+        }
+        to{
+            Left: 100px;
+            background: blue;
+            border-radius: 100px;
+        }
     }
