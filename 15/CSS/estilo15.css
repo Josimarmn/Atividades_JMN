@@ -11,7 +11,7 @@ body{
       background: red;
       animation-name: minhaAnimacao;
       animation-duration: 10s;
-      animation-iteration-count: 3;
+      animation-iteration-count: infinite;
     }
 
     @keyframes minhaAnimacao{
