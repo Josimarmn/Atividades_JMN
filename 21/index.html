@@ -56,5 +56,11 @@
 		title="Detalhes do item">Dica
 	</button>
 </body>
+	<script type="text/javascript">
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]´))
+		var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEL){
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+	</script>
 </html>
 
