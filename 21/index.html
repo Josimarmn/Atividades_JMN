@@ -123,7 +123,7 @@
 	      <td>
 		<i class="bi bi-layout-text-window-reverse" data-bs-toggle="tooltip" data-bs-placement="right" title="Ver Detalhes"></i>
 	      	<i class="bi bi-pencil-square" data-bs-toggle="tooltip" data-bs-placement="right" title="Editar"></i>
-	      	<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover"></i>	      
+	      	<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover" id="confirmar" onclick="myFunction()"></i>	      
 	      </td>
             </tr>
 	    <tr>
@@ -142,7 +142,7 @@
 	      <td>
 		<i class="bi bi-layout-text-window-reverse" data-bs-toggle="tooltip" data-bs-placement="right" title="Ver Detalhes"></i>
 		<i class="bi bi-pencil-square" data-bs-toggle="tooltip" data-bs-placement="right" title="Editar"></i>
-		<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover"></i>
+		<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover" id="confirmar" onclick="myFunction()"></i>
 	      </td>
 	    </tr>
 	    <tr>
@@ -161,7 +161,7 @@
 	      <td>
 		<i class="bi bi-layout-text-window-reverse" data-bs-toggle="tooltip" data-bs-placement="right" title="Ver Detalhes"></i>
 	        <i class="bi bi-pencil-square" data-bs-toggle="tooltip" data-bs-placement="right" title="Editar"></i>
-	      	<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover"></i>
+	      	<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover" id="confirmar" onclick="myFunction()"></i>
 	      </td>
             </tr>
 	    <tr>
@@ -180,7 +180,7 @@
 	      <td>
 		<i class="bi bi-layout-text-window-reverse" data-bs-toggle="tooltip" data-bs-placement="right" title="Ver Detalhes"></i>
 	      	<i class="bi bi-pencil-square" data-bs-toggle="tooltip" data-bs-placement="right" title="Editar"></i>
-	     	<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover"></i>
+	     	<i class="bi bi-trash" data-bs-toggle="tooltip" data-bs-placement="right" title="Remover" id="confirmar" onclick="myFunction()"></i>
 	      </td>
             </tr>         
           </table>          
@@ -188,6 +188,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </div>
+  <script>
+    function myFunction() {
+      document.getElementById("confirmar").innerHTML = "Deseja realmente excluir? Sim ou Não";
+    }
+    </script>
 </body>
 <script type="text/javascript">
 			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
