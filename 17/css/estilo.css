@@ -1,0 +1,12 @@
+.conteudo{
+    background: #DCDCDC;
+    border: 2px solid blue;
+}
+.linha{
+    background: #FFEBCD;
+    border: 2px solid black;
+}
+.coluna{
+    background: #87CEEB;
+    border: 2px solid black;
+}
