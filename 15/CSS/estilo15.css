@@ -14,6 +14,9 @@ body{
     height: 200px;
     animation: rotacao 40s linear infinite;
 }
+.box:hover{
+     border: solid 5px black
+}
 @keyframes rotacao {
     0% { transform: rotate(0deg); background-color: red; }
     25% { transform: rotate(90deg); background-color: green; }
